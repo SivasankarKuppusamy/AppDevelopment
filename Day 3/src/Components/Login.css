@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  background-color: #f1f1f1;
+}
+
+h2, h3, a {
+  color: rgb(55, 63, 71);
+}
+
+h2 {
+  margin: 10px 0 10px;
+  font-size: 20px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+
+h3, a {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(46, 145, 252);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 20px 0;
+  transition: .3s ease all;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(46, 108, 252);
+  transition: .3s ease all;
+}
+
+label {
+  display: block;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.login .outer-container {
+  min-width: 400px;
+  min-height: 600px;
+  text-align: center;
+  background: rgb(247, 248, 249);
+  border-radius: 13px;
+}
+.outer-container {
+  min-width: 400px;
+  min-height: 600px;
+  text-align: center;
+  background: rgb(247, 248, 249);
+  border-radius: 13px;
+}
+
+.content-container {
+    width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+.content-container > img {
+  width: 40%;
+  margin-top: 40px;
+}
+
+input[type="email"], input[type="password"],input[type="text"],input[type="calendar"] {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background: rgb(247, 248, 249);
+}
+
+.checkbox {
+  margin: 10px 0;
+  text-align: left;
+  font-weight: 200;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#register {
+  text-decoration: none;
+  color: rgb(0, 123, 255);
+  display: inline;
+}
+
+@media screen and (min-width: 500px) {
+  .outer-container {
+    box-shadow: 5px 3px 20px -3px #999999;
+    height: 525px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  form {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .outer-container {
+    width: 800px;
+    display: flex;
+  }
+  
+  .content-container {
+    width: 50%;
+  }
+  
+  .login .image-container {
+    border-radius: 10px;
+    width: 50%;
+    background: bottom / 100% url('https://images.unsplash.com/photo-1618355776464-8666794d2520?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+  }
+  .ins-register .image-container{
+    border-radius: 10px;
+    width: 50%;
+    background: bottom / 100% url('https://www.pngitem.com/pimgs/m/5-56484_profesor-particular-teacher-stock-hd-png-download.png');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    margin-bottom: 60px;
+  }
+  .student-reg .image-container{
+    border-radius: 10px;
+    width: 49%;
+    background-position-x: center;
+    background: bottom / 100% url('https://png.pngtree.com/png-vector/20210120/ourlarge/pngtree-contact-us-flat-design-style-png-image_2766546.jpg');
+    background-repeat: no-repeat;
+    background-size: 140%;
+    margin-bottom: 90px;
+    margin-right: 10px;
+}
+}
