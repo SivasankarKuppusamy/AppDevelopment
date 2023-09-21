@@ -16,6 +16,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { logout } from '../redux/userSlice';
 function SideBar() {
   const username=useSelector((state)=>state.user.user);
+  const userType=useSelector((state)=>state.user.userType);
+
   const nav=useNavigate();
   const [activeMenuItem, setActiveMenuItem] = useState('Dashboard');
   const handleMenuItemClick = (menuItemId) => {
@@ -34,10 +36,14 @@ function SideBar() {
     {username? (<>
     <div className={`sidebar-container ${isSidebarOpen ? 'open' : 'menu2'}`}>
       <Sidebar>
+   
+
       {isSidebarOpen ? (
           <Menu className="menu">
           <>
-              <MenuItem  style={{ backgroundColor: activeMenuItem === 'Dashboard' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}}  component={<Link to="/" />} icon={<SpaceDashboardIcon />} onClick={() => handleMenuItemClick('Dashboard')}>Dashboard</MenuItem>
+          {userType=="admin"?(
+            <>
+              <MenuItem  style={{ backgroundColor: activeMenuItem === 'Dashboard' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}}  component={<Link to="/admin-dashboard" />} icon={<SpaceDashboardIcon />} onClick={() => handleMenuItemClick('Dashboard')}>Dashboard</MenuItem>
               <MenuItem  style={{ backgroundColor: activeMenuItem === 'Courses' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/courses" />} icon={<LibraryBooksIcon />} onClick={() => handleMenuItemClick('Courses')}>Courses</MenuItem>
               <MenuItem  style={{ backgroundColor: activeMenuItem === 'ins' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/instructors" />} icon={<BadgeIcon />} onClick={() => handleMenuItemClick('ins')}>Instructors</MenuItem>
               <MenuItem  style={{ backgroundColor: activeMenuItem === 'Students' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/students" />} icon={<PeopleOutlineIcon />} onClick={() => handleMenuItemClick('Students')}>Students</MenuItem>
@@ -45,12 +51,39 @@ function SideBar() {
               <MenuItem  style={{ backgroundColor: activeMenuItem === 'Reports' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/reports" />} icon={<ImportContactsIcon />} onClick={() => handleMenuItemClick('Reports')}>Reports</MenuItem>
               <MenuItem onClick={handleLogout} icon={<LogoutIcon />} className="menu-item-l">Logout</MenuItem>
               <footer>&copy; Copyright 2023 123.abc</footer>
-            </></Menu>
+            </>
+         
+            ):(<>
+              {userType==="student"?(
+                <>
+                <MenuItem  style={{ backgroundColor: activeMenuItem === 'Dashboard' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}}  component={<Link to="/user-dashboard" />} icon={<SpaceDashboardIcon />} onClick={() => handleMenuItemClick('Dashboard')}>Dashboard</MenuItem>
+                <MenuItem  style={{ backgroundColor: activeMenuItem === 'Courses' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/courses" />} icon={<LibraryBooksIcon />} onClick={() => handleMenuItemClick('Courses Enrolled')}>Courses</MenuItem>
+                <MenuItem  style={{ backgroundColor: activeMenuItem === 'grades' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/grades" />} icon={<BadgeIcon />} onClick={() => handleMenuItemClick('grades')}>Grades</MenuItem>
+                <MenuItem  style={{ backgroundColor: activeMenuItem === 'activities' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/activities" />} icon={<PeopleOutlineIcon />} onClick={() => handleMenuItemClick('activities')}>Activities</MenuItem>
+                <MenuItem  style={{ backgroundColor: activeMenuItem === 'attendence' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/subjects" />} icon={<SubjectIcon />} onClick={() => handleMenuItemClick('attendence')}>Attendence</MenuItem>
+                <MenuItem onClick={handleLogout} icon={<LogoutIcon />} className="menu-item-l">Logout</MenuItem>
+                <footer>&copy; Copyright 2023 123.abc</footer>
+                </>
+            ):(<>
+              <>
+              <MenuItem  style={{ backgroundColor: activeMenuItem === 'Dashboard' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}}  component={<Link to="/user-dashboard" />} icon={<SpaceDashboardIcon />} onClick={() => handleMenuItemClick('Dashboard')}>Dashboard</MenuItem>
+              <MenuItem  style={{ backgroundColor: activeMenuItem === 'Courses' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/courses" />} icon={<LibraryBooksIcon />} onClick={() => handleMenuItemClick('Courses Enrolled')}>Courses</MenuItem>
+              <MenuItem  style={{ backgroundColor: activeMenuItem === 'Students' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/students" />} icon={<BadgeIcon />} onClick={() => handleMenuItemClick('Students')}>Students</MenuItem>
+              <MenuItem  style={{ backgroundColor: activeMenuItem === 'activities' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/activities" />} icon={<PeopleOutlineIcon />} onClick={() => handleMenuItemClick('activities')}>Activities</MenuItem>
+              <MenuItem  style={{ backgroundColor: activeMenuItem === 'attendence' ? 'rgb(51, 51, 241)' : 'transparent',borderRadius:50}} component={<Link to="/subjects" />} icon={<SubjectIcon />} onClick={() => handleMenuItemClick('attendence')}>Attendence</MenuItem>
+              <MenuItem onClick={handleLogout} icon={<LogoutIcon />} className="menu-item-l">Logout</MenuItem>
+              <footer>&copy; Copyright 2023 123.abc</footer>
+              </>
+              </>)}
+              </>
+            )}
+            </>
+            </Menu>
           ) : (
               <Menu className="menu2">
               <>
               
-              <MenuItem  style={{ color: activeMenuItem === 'Dashboard' ? 'rgb(51, 51, 241)' : 'black',borderRadius:50}}  component={<Link to="/" />} icon={<SpaceDashboardIcon />} onClick={() => handleMenuItemClick('Dashboard')}></MenuItem>
+              <MenuItem  style={{ color: activeMenuItem === 'Dashboard' ? 'rgb(51, 51, 241)' : 'black',borderRadius:50}}  component={<Link to="/admin-dashboard" />} icon={<SpaceDashboardIcon />} onClick={() => handleMenuItemClick('Dashboard')}></MenuItem>
               <MenuItem  style={{ color: activeMenuItem === 'Courses' ? 'rgb(51, 51, 241)' : 'black',borderRadius:50}} component={<Link to="/courses" />} icon={<LibraryBooksIcon />} onClick={() => handleMenuItemClick('Courses')}></MenuItem>
               <MenuItem  style={{ color: activeMenuItem === 'ins' ? 'rgb(51, 51, 241)' : 'black',borderRadius:50}} component={<Link to="/instructors" />} icon={<BadgeIcon />} onClick={() => handleMenuItemClick('ins')}></MenuItem>
               <MenuItem  style={{ color: activeMenuItem === 'Students' ? 'rgb(51, 51, 241)' : 'black',borderRadius:50}} component={<Link to="/students" />} icon={<PeopleOutlineIcon />} onClick={() => handleMenuItemClick('Students')}></MenuItem>

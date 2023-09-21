@@ -22,12 +22,10 @@ function Signup() {
     else if(password.length<8){
       alert("Password must be minimum of 8 charcters");
     }
-    else if(!isChecked)
-    {
+    else if(!isChecked){
         alert("Please Verify Terms and Conditions")
     }
-    else
-    {
+    else{
         nav('/login')
     }
   }
@@ -57,7 +55,7 @@ function Signup() {
         <button onClick={validate} type="submit">Register</button>
       </form>
      
-      <h3>Already have an account? </h3><h3 id="log"><Link id="register" to="/login">Login !</Link></h3>
+      <h3>Already have an account? <Link id="register" to="/login">Login !</Link></h3>
     </div>
     <div class="image-container"></div>
   </div></div>

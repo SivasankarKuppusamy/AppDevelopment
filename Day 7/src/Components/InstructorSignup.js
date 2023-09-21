@@ -54,7 +54,7 @@ function InstructorSignup() {
         </div>
         <button onClick={validate} type="submit">Register</button>
       </form>
-      <h3>Already have an account? <Link id="register" to="/login">Login !</Link></h3>
+      <h3 class="log">Already have an account? &nbsp;</h3><h3 id="log"><Link id="register" to="/login">Login !</Link></h3>
     </div>
     <div class="image-container"></div>
   </div></div>

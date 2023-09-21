@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
-function InstructorSignup() {
+function Signup() {
   const [email,setEmail]=useState('');
   const [name,setName]=useState('');
   const [password,setPassword]=useState('');
@@ -22,25 +22,27 @@ function InstructorSignup() {
     else if(password.length<8){
       alert("Password must be minimum of 8 charcters");
     }
-    else if(!isChecked){
+    else if(!isChecked)
+    {
         alert("Please Verify Terms and Conditions")
     }
-    else{
+    else
+    {
         nav('/login')
     }
   }
   return (
-    <div class="ins-register">
+    <div class="student-reg">
     <div class="outer-container">
     <div class="content-container">
       <img alt="logo" src="https://repository-images.githubusercontent.com/556076311/5baa47be-f8f3-4925-b674-837ee2863d5a"/>
-      <h2>REGISTER AS AN INSTRUCTOR</h2>
+      <h2>REGISTER AS A STUDENT</h2>
       <form >
       <div>
-      <input onChange={(e)=>setName(e.target.value)} type="text" placeholder="Name"/>
+      <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="Email"/>
         </div>
       <div>
-      <input onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="Email"/>
+      <input onChange={(e)=>setName(e.target.value)} type="text" placeholder="Name"/>
         </div>
         <div>
           <input onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Password"/>
@@ -54,11 +56,12 @@ function InstructorSignup() {
         </div>
         <button onClick={validate} type="submit">Register</button>
       </form>
-      <h3>Already have an account? <Link id="register" to="/login">Login !</Link></h3>
+     
+      <h3>Already have an account? </h3><h3 id="log"><Link id="register" to="/login">Login !</Link></h3>
     </div>
     <div class="image-container"></div>
   </div></div>
   )
 }
 
-export default InstructorSignup
+export default Signup

@@ -11,7 +11,6 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
   font-family: Inter;
@@ -29,11 +28,7 @@ h2 {
 h3 {
   margin-bottom: 10px;
 }
-.login h3{
-  margin-right: 10px;
-  text-align: start;
-  font-size: small;
-}
+
 h3, a {
   font-size: 14px;
   font-weight: 300;
@@ -72,36 +67,31 @@ label:hover {
 }
 
 .login .outer-container {
-min-width: 400px;
-min-height: 500px;
-  margin-top: 70px;
- text-align: center;
-  background: rgb(247, 248, 249);
-  border-radius: 13px;
-  margin-right:700px;
-}
-.outer-container {
   min-width: 400px;
-  min-height: 400px;
+  min-height: 600px;
   text-align: center;
   background: rgb(247, 248, 249);
   border-radius: 13px;
-  margin-top: 60px;
+}
+.outer-container {
+  min-width: 400px;
+  min-height: 600px;
+  text-align: center;
+  background: rgb(247, 248, 249);
+  border-radius: 13px;
 }
 
 .content-container {
     width: 70%;
-  height: 100%
+  height: 100%;
+  margin: auto;
 }
 
 .content-container > img {
   width: 40%;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
-.login h4{
-  padding-top: 6px;
-}
 input[type="email"], input[type="password"],input[type="text"],input[type="calendar"] {
   margin: 10px 0;
   padding: 10px;
@@ -110,11 +100,7 @@ input[type="email"], input[type="password"],input[type="text"],input[type="calen
   border-radius: 5px;
   background: rgb(247, 248, 249);
 }
-#log{
-  margin-left: 160px;
-  font-size: large;
-  text-transform: uppercase;
-}
+
 .checkbox {
   margin: 10px 0;
   text-align: left;
@@ -129,10 +115,9 @@ input[type="checkbox"] {
 }
 
 #register {
-  color: rgb(38, 0, 255);
-  padding-top: 2px;
-  font-size: small;
-  
+  text-decoration: none;
+  color: rgb(0, 123, 255);
+  display: inline;
 }
 
 @media screen and (min-width: 500px) {
@@ -160,10 +145,7 @@ input[type="checkbox"] {
   .login .image-container {
     border-radius: 10px;
     width: 50%;
-    background: bottom / 100% url('https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=2000');
-    background-repeat: no-repeat;
-    background-size: 120%;
-    margin-bottom: 60px;
+    background: bottom / 100% url('https://images.unsplash.com/photo-1618355776464-8666794d2520?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHN0dWRlbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
   }
   .ins-register .image-container{
     border-radius: 10px;
@@ -177,9 +159,9 @@ input[type="checkbox"] {
     border-radius: 10px;
     width: 49%;
     background-position-x: center;
-    background: bottom / 100% url('https://d1idiaqkpcnv43.cloudfront.net/website1.0/images/sign-up.png');
+    background: bottom / 100% url('https://png.pngtree.com/png-vector/20210120/ourlarge/pngtree-contact-us-flat-design-style-png-image_2766546.jpg');
     background-repeat: no-repeat;
-    background-size: 125%;
+    background-size: 140%;
     margin-bottom: 90px;
     margin-right: 10px;
 }
