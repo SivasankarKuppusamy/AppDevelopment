@@ -1,10 +1,13 @@
 package com.example.demo.controller;
 import com.example.demo.entity.Users;
 import com.example.demo.service.UsersService;
+import com.example.demo.util.JwtUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
@@ -18,6 +21,10 @@ public class UsersController {
     @GetMapping("/{id}")
     public Users getUserById(@PathVariable int id) {
         return usersService.getUserById(id);
+    }
+    @GetMapping("/{email}")
+    public Optional<Users> findByUsername(@PathVariable String email) {
+    	return usersService.findByUsername(email);
     }
     @PostMapping
     public Users createUser(@RequestBody Users user) {
