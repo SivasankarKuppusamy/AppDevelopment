@@ -37,12 +37,15 @@ public class StudentService {
             Students existingStudent = existingStudentOptional.get();
             existingStudent.setStudentName(updatedStudent.getStudentName());
             existingStudent.setGender(updatedStudent.getGender());
+            existingStudent.setEmail(updatedStudent.getEmail());
+            existingStudent.setContactnum(updatedStudent.getContactnum());
             existingStudent.setYear(updatedStudent.getYear());
             existingStudent.setQuota(updatedStudent.getQuota());
+            existingStudent.setAddress(updatedStudent.getAddress());
             existingStudent.setAge(updatedStudent.getAge());
             existingStudent.setTotalFees(updatedStudent.getTotalFees());
             existingStudent.setFeesPaid(updatedStudent.getFeesPaid());
-            existingStudent.setDepartment(updatedStudent.getDepartment());
+            existingStudent.setDept(updatedStudent.getDept());
             existingStudent.setDob(updatedStudent.getDob());
 
             return studentRepository.save(existingStudent);

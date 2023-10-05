@@ -24,7 +24,7 @@ public class Students {
 	private String email;
 	private String gender;
 	private int year;
-	private String department;
+	private String dept;
 	private long contactnum;
 	private String address;
 	private String quota;

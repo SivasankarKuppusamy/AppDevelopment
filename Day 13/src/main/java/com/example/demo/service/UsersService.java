@@ -16,8 +16,7 @@ public class UsersService {
 
     public List<Users> getAllUsers() {
         return usersRepository.findAll();
-    }
-
+    }	
     public Users getUserById(int id) {
         Optional<Users> userOptional = usersRepository.findById(id);
         return userOptional.orElse(null);
@@ -32,7 +31,6 @@ public class UsersService {
 
         if (existingUserOptional.isPresent()) {
             Users existingUser = existingUserOptional.get();
-
             existingUser.setEmail(updatedUser.getEmail());
             existingUser.setPassword(updatedUser.getPassword());
             existingUser.setRole(updatedUser.getRole());
