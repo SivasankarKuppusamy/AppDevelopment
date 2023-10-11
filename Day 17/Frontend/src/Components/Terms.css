@@ -1,0 +1,45 @@
+* {
+}
+.eterms{
+    margin-top: 7%;
+    cursor: pointer;
+   
+}
+.eterms .wrap {
+    width: 95%;
+    margin: 5px auto;
+    max-width: 1200px;
+    font-weight: 100;
+}
+.eterms .wrap h1 {
+    font-weight: 100;
+}
+.eterms h3{
+    font-size: large;
+    text-transform: uppercase;
+    left:0;
+    margin-left: 0;
+    padding:10px;
+    color:blue
+}
+.eterms .terms {
+    margin-top:20px;
+    height: 450px;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.eterms .terms p {
+    line-height: 25px;
+}
+
+@-webkit-keyframes rotation {
+       from {
+               -webkit-transform: rotate(0deg);
+       }
+       to {
+               -webkit-transform: rotate(359deg);
+       }
+}

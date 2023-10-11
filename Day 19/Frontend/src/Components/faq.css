@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+  }
+  .faq{
+    margin-top: 7%;
+  }
+  [class*="col-"] {
+    float:left;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+  }
+  .intro{
+text-align: center;
+  }
+  .col-1 {width: 20%;}
+  .col-2 {width: 45%; }
+  .col-3 {width: 49.99%;}
+  
+   .faq p {
+  font-family: chaparral-pro, serif;
+  font-style: normal;
+  font-weight: 400;
+  }
+  
+  .faq h2 {
+  font-family: ingra, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 35px;
+  
+  }
+  
+  .faq h3 {
+  font-family: ingra, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  }
+  
+  .faq .button {
+    width: 25%;
+    background-color: #88b04b;
+    padding: 3px;
+    margin: 25px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: all .5s ease .25s;
+  }
+  
+  .faq .button:hover {
+    background-color: #a9bd89;
+    border-color: #a9bd89;
+    transform: scale(1.1);
+  }
+  
+  .faq a:link {
+    color: white;
+  }
+  
+  .faq a:hover {
+    color: #d6d6d6;
+  }
+  
+  .faq a:active {
+    color: white;
+  }
+  
+  .faq a:visited {
+    color: white;
+  }
+  
+  @import url("https://use.typekit.net/koi6nlk.css");;
+  .snip1198 {
+    font-family: ingra-2, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .snip1198 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1198 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.4em 0.8em;
+    padding: 0;
+  }
+  .snip1198 a {
+    padding: 0 0.7em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .snip1198 a:before {
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    left: 15%;
+    right: 15%;
+    top: 0;
+    bottom: 0;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+  }
+  .snip1198 a:hover,
+  .snip1198 .current a {
+    color: #ffffff;
+  }
+  .snip1198 a:hover:before,
+  .snip1198 .current a:before {
+    opacity: 1;
+    left: 0;
+    right: 0;
+  }
+  
+  .navigation {
+  background-color: #1c1c1c;
+  opacity: .95;
+  padding-top: 30;
+  padding-bottom: 20;
+  padding-left: 20;
+  padding-right: 20;
+  }
+  

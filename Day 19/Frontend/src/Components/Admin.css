@@ -1,0 +1,218 @@
+#main {
+  padding-left: 16%;
+  margin-top: 70px;
+  display: fixed;
+  justify-content: space-around;
+}
+.over{
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  padding:10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#main h2{
+  color:rgb(6, 6, 141);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.fac-head{
+  display: flex;
+  margin-left: 100px;
+}
+
+#dash h3 {
+  font-size: x-large;
+}
+#students-list table{
+  min-width:700px;
+  border-radius: 10px;
+  padding:10px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+}
+#students-list{
+  display: flex;
+}
+#faculties-list{
+  display: flex;
+  margin-top: 2.5%;
+}
+#another{
+  
+}
+#faculties-list table{
+  width:500px;
+  padding:0;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.heading {
+  margin-top: 10px;
+  border: solid;
+  margin-left: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.heading img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+#overview {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+#student-image {
+  height: 80px;
+  border-radius: 50px;
+}
+.one {
+  height: 170px;
+  width: 190px;
+  padding: 8px;
+  border: 1px solid;
+  font-size: large;
+  text-align: center;
+  border-radius: 15px;
+  float: left;
+}
+.one:hover,#det:hover,#home-table:hover{
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+
+}
+
+#home-table,
+#home-tr,
+#home-th,
+#home-td {
+  padding:10px;
+  border-bottom: 1px solid;
+  border-collapse: collapse;
+  border-radius: 10px;
+  background-color: rgb(201, 224, 245);
+}
+#home-table{
+  padding-bottom:10px;
+}
+
+#det {
+  display: flex;
+  margin-top: 0px;
+  margin-left:0;
+}
+.row1{
+  display: table;
+  width:100%;
+}
+.line {
+  display: flex;
+  float: left;
+  left:0;
+  margin-bottom: 10px;
+}
+
+.pie{
+  display: flex;
+  float:right;
+  top:0;
+  margin-left: 100px;
+}
+.pie-chart{
+  border-radius: 10px;
+  padding:10px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.Piechart {
+  max-height: 100px;
+}
+.recharts-surface{
+  padding:0
+}
+.heads{
+  display: flex;
+}
+.pie-chart{
+  margin-left: 100%;
+}
+.head2{
+  display:flex;
+  margin-right: 100px;
+  position:absolute;
+right:200px;
+}
+.row2{
+  display: flex;
+}
+.head1{
+  display: flex;
+}
+
+#home-table {
+  text-align: center;
+  min-width: 700px;
+}
+
+#home-tr,
+#home-th {
+  padding: 20px;
+}
+
+#div2 {
+  padding-left: 40px;
+  padding-top: 40px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  clear: both;
+}
+@media (max-width: 768px) {
+  #main {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .heading {
+    margin-left: 0;
+  }
+
+  .overview-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 100%;
+    margin: 10px 0;
+    float: none;
+  }
+
+  .four {
+    margin-right: 0;
+  }
+
+  .three {
+    margin-left: 0;
+  }
+
+  .two {
+    margin-left: 0;
+  }
+
+  #div2 {
+    padding-left: 0;
+    padding-top: 40px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    clear: both;
+  }
+}
