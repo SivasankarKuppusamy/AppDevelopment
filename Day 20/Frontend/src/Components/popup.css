@@ -1,0 +1,6 @@
+.table-elements {
+    width: 100%;
+    align-items: center;
+    justify-content: center; /* Horizontally center */
+    text-align: left; /* Optional, if you want to adjust text alignment */
+}

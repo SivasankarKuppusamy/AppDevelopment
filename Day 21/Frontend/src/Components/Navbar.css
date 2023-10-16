@@ -1,0 +1,156 @@
+.nav {
+    background-color: #fff;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 2px 2px #e0e0e0;
+  }
+  .nav a{
+    margin: 0;
+  }
+  .nav .logo-name {
+    font-size: xx-small;
+    padding-bottom: 15px;
+  }
+  
+  .logo1 {
+    display: flex;
+    border-radius: 50%;
+    height: 40px;
+    width: 50px;
+    margin-left: 20px;
+  }
+  
+  .logo {
+    color: cornflowerblue;
+    margin-left: 5px;
+  }
+  .login:hover{
+    color:rgb(33, 33, 228);
+  }
+  .login{
+    margin-left:920px ;
+    margin-right: 0;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+  }
+.top-bar {
+  color: #fff; 
+  display: flex; 
+  margin-left: 700px;
+  align-items: center; 
+  margin-bottom: 10px;
+}
+
+.li-elements {
+  margin-right: 20px; 
+  list-style: none; 
+  display: flex;
+  align-items: center; 
+}
+
+.notification-icon {
+  width: 30px; 
+  height: 30px; 
+}
+
+.login-link {
+  margin-left: 0;
+  padding:0;
+  margin: 0;
+  text-decoration: none; 
+  color: #fff; 
+}
+.li-elements{
+    color:black;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .nav-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .nav .search {
+   min-width:100%;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: 0;
+  }
+  
+  .user-icon-image {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 1350px;
+    top: 9px;
+  }
+  
+  /* .notification-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 630px;
+    top: 8px;
+  } */
+  
+  .user-name {
+    margin-left: 0px;
+    margin-top: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 1400px;
+    top: 5px;
+  }
+  
+  .toggle {
+    margin-bottom: 13px;
+    margin-left: 10px;
+  }
+  
+  .li-search {
+    margin-bottom: 15px;
+  }
+  
+  .mobile-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .user-name-li{
+    overflow: hidden;
+  }
+  
+  .mobile-nav ul li {
+    margin-top: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav ul {
+      margin-left: 10px; 
+    }
+  
+    .user-icon-image,
+    .notification-icon,
+    .user-name {
+      position: static; 
+      margin: 5px 10px; 
+    }
+  }
+  
+  
