@@ -1,0 +1,71 @@
+{
+  "name": "new_project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/lab": "^5.0.0-alpha.145",
+    "@mui/material": "^5.14.10",
+    "@mui/styled-engine-sc": "^5.14.10",
+    "@mui/x-charts": "^6.0.0-alpha.10",
+    "@mui/x-data-grid": "^6.15.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.2",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.30.0",
+    "file-saver": "^2.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-chartkick": "^0.5.3",
+    "react-csv": "^2.2.2",
+    "react-datepicker": "^4.18.0",
+    "react-dom": "^18.2.0",
+    "react-pro-sidebar": "^1.1.0-alpha.1",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.5",
+    "recharts": "^2.8.0",
+    "rsuite": "^5.40.0",
+    "styled-components": "^5.3.11",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

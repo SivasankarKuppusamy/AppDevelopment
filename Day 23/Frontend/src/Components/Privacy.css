@@ -1,0 +1,40 @@
+.privacy-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1 2px 4px rgba(0, 0, 0, 0.1); 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    border:1px solid;
+  }
+  .privacy-container{
+    margin-top: 4%;
+  }
+  .privacy-container h2{
+    text-align: center;
+  }
+  .privacy-container h2, .privacy-container h3 {
+    color: #f01717; 
+    font-size: large;
+    margin-left: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:10px;
+  }
+  .privacy-container li{
+
+      margin-left: 30px;
+  }
+    .privacy-container p {
+    color: #666666; 
+    line-height: 1.5; 
+    margin-left: 30px;
+    }
+ 
+  .privacy-container a {
+    color: #007bff; 
+    text-decoration: underline; 
+  }
+  

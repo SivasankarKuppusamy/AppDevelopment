@@ -1,0 +1,46 @@
+
+eureka:
+  instance:
+    hostname: localhost
+
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: users-service
+          uri: lb://users-service
+          predicates:
+            - Path=/users/**
+        - id: attendence-service
+          uri: lb://attendence-service
+          predicates:
+            - Path=/attendence/**
+        - id: courses-service
+          uri: lb://courses-service
+          predicates:
+            - Path=/courses/**
+        - id: departments-service
+          uri: lb://departments-service
+          predicates:
+            - Path=/departments/**
+        - id: grades-service
+          uri: lb://grades-service
+          predicates:
+            - Path=/grades/**
+        - id: instructors-service
+          uri: lb://instructors-service
+          predicates:
+            - Path=/instructors/**
+        - id: students-service
+          uri: lb://students-service
+          predicates:
+            - Path=/students/**    
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth/**    
+  
+            
